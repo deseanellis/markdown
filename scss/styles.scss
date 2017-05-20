@@ -1,0 +1,57 @@
+@import 'partials/variables';
+@import 'partials/mixins';
+
+@include google-font('Yanone+Kaffeesatz');
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0px;
+  background-color: $primary-body-background-color;
+  color: $primary-color-text;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 1.1em;
+
+  .content {
+    flex: 1;
+    padding: 30px 10px 30px 10px;
+  }
+
+  .header {
+    @include header($color-bg: $primary-color, $border-size: 6px, $height: 60px);
+    padding-left: 35px;
+    div {
+      @include vertical-align-block;
+    }
+
+  }
+
+  .footer {
+    @include footer($color-bg: $primary-color, $border-size: 3px, $height: 40px);
+    color: #FFF;
+    padding: 5px;
+    text-align: center;
+  }
+
+  textarea {
+    @include box($padding: 20px);
+    &:hover{
+      overflow-y: scroll;
+    }
+  }
+
+  .preview-area {
+    @include box($padding: 20px);
+    &:hover{
+      overflow-y: scroll;
+    }
+    background-color: #FFF;
+  }
+}

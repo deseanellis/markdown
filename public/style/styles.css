@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz");
+html {
+   height: 100%;
+}
+
+body {
+   min-height: 100%;
+}
+
+body {
+   margin: 0px;
+   background-color: #000000;
+   color: #FFFFFF;
+   display: flex;
+   flex-direction: column;
+   font-family: 'Yanone Kaffeesatz', sans-serif;
+   font-size: 1.1em;
+}
+
+body .content {
+   flex: 1;
+   padding: 30px 10px 30px 10px;
+}
+
+body .header {
+   height: 60px;
+   line-height: calc(60px - 6px);
+   width: 100%;
+   background-color: #4CAF50;
+   border-bottom: 6px solid #2d682f;
+   color: #FFFFFF;
+   font-size: 2em;
+   padding-left: 35px;
+}
+
+body .header div {
+   display: inline-block;
+   vertical-align: middle;
+   line-height: normal;
+}
+
+body .footer {
+   width: 100%;
+   background-color: #4CAF50;
+   border-top: 3px solid #2d682f;
+   color: #FFFFFF;
+   font-size: 0.8em;
+   color: #FFF;
+   padding: 5px;
+   text-align: center;
+}
+
+body textarea {
+   height: 500px;
+   width: 100%;
+   border-radius: 5px;
+   box-shadow: inset -1px 0px 32px -7px #787878;
+   color: #212121;
+   padding: 20px;
+}
+
+body textarea:hover {
+   overflow-y: scroll;
+}
+
+body .preview-area {
+   height: 500px;
+   width: 100%;
+   border-radius: 5px;
+   box-shadow: inset -1px 0px 32px -7px #787878;
+   color: #212121;
+   padding: 20px;
+   background-color: #FFF;
+}
+
+body .preview-area:hover {
+   overflow-y: scroll;
+}
