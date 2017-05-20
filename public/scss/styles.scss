@@ -2,6 +2,7 @@
 @import 'partials/mixins';
 
 @include google-font('Yanone+Kaffeesatz');
+
 html {
   height: 100%;
 }
@@ -12,8 +13,8 @@ body {
 
 body {
   margin: 0px;
-  background-color: $primary-body-background-color;
-  color: $primary-color-text;
+  background-color: lighten($primary-bg-color, 30%);
+  color: $primary-text-color;
   display: flex;
   flex-direction: column;
   font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -25,7 +26,8 @@ body {
   }
 
   .header {
-    @include header($color-bg: $primary-color, $border-size: 6px, $height: 60px);
+    @include header($color-bg: $primary-bg-color, $border-size: 4px, $height: 60px);
+    color: $header-text-color;
     padding-left: 35px;
     div {
       @include vertical-align-block;
@@ -34,8 +36,8 @@ body {
   }
 
   .footer {
-    @include footer($color-bg: $primary-color, $border-size: 3px, $height: 40px);
-    color: #FFF;
+    @include footer($color-bg: $primary-bg-color, $border-size: 3px, $height: 40px);
+    color: $primary-text-color;
     padding: 5px;
     text-align: center;
   }

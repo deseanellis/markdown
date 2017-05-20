@@ -9,8 +9,8 @@ body {
 
 body {
    margin: 0px;
-   background-color: #000000;
-   color: #FFFFFF;
+   background-color: #7c879d;
+   color: #F2F2F2;
    display: flex;
    flex-direction: column;
    font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -24,12 +24,13 @@ body .content {
 
 body .header {
    height: 60px;
-   line-height: calc(60px - 6px);
+   line-height: calc(60px - 4px);
    width: 100%;
-   background-color: #4CAF50;
-   border-bottom: 6px solid #2d682f;
-   color: #FFFFFF;
+   background-color: #373D49;
+   border-top: 4px solid #35D7BB;
+   color: #35D7BB;
    font-size: 2em;
+   color: #35D7BB;
    padding-left: 35px;
 }
 
@@ -41,11 +42,11 @@ body .header div {
 
 body .footer {
    width: 100%;
-   background-color: #4CAF50;
-   border-top: 3px solid #2d682f;
-   color: #FFFFFF;
+   background-color: #373D49;
+   border-top: 3px solid #35D7BB;
+   color: #F2F2F2;
    font-size: 0.8em;
-   color: #FFF;
+   color: #F2F2F2;
    padding: 5px;
    text-align: center;
 }
@@ -63,6 +64,10 @@ body textarea:hover {
    overflow-y: scroll;
 }
 
+body textarea:hover {
+   overflow-y: scroll;
+}
+
 body .preview-area {
    height: 500px;
    width: 100%;
@@ -71,6 +76,10 @@ body .preview-area {
    color: #212121;
    padding: 20px;
    background-color: #FFF;
+}
+
+body .preview-area:hover {
+   overflow-y: scroll;
 }
 
 body .preview-area:hover {
